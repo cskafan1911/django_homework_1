@@ -28,10 +28,12 @@
         body {
             min-height: 100vh;
             min-height: -webkit-fill-available;
+            overflow-x: scroll;
         }
 
         html {
             height: -webkit-fill-available;
+
         }
 
         main {
@@ -43,6 +45,7 @@
             overflow-x: auto;
             overflow-y: hidden;
         }
+
 
         .b-example-divider {
             flex-shrink: 0;
@@ -301,8 +304,8 @@
                 </div>
             </div>
             <div class="row text center">
-                <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                    <h1 class="display-5 fw-small text-body-emphasis">FAQ</h1>
+                <div class="pricing-header p-5 pb-md-3 mx-auto text-center">
+                    <h1 class="display-6 fw-normal text-body-emphasis">FAQ</h1>
                     <p class="d-inline-flex gap-1">
                         <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
                            aria-expanded="false" aria-controls="multiCollapseExample1">Как купить?</a>
@@ -326,7 +329,8 @@
                         <div class="col">
                             <div class="collapse multi-collapse" id="multiCollapseExample2">
                                 <div class="card card-body">
-                                    Возможны три варианта доставки: самовывоз из пункта выдачи; доставка почтой; доставка курьером по указанному адресу.
+                                    Возможны три варианта доставки: самовывоз из пункта выдачи; доставка почтой;
+                                    доставка курьером по указанному адресу.
                                 </div>
                             </div>
                         </div>
@@ -340,6 +344,52 @@
                     </div>
                 </div>
             </div>
+            <table class="table table-striped-columns">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Название товара</th>
+                    <th scope="col">Цена за штуку</th>
+                    <th scope="col">Количество</th>
+                    <th scope="col">Итоговая сумма</th>
+                    <th scope="col">Статус заказа</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>iPhone 12</td>
+                    <td>30000</td>
+                    <td>3</td>
+                    <td>90000</td>
+                    <td>Отмена</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>iPhone 13</td>
+                    <td>50000</td>
+                    <td>2</td>
+                    <td>100000</td>
+                    <td>Обработка</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>iPhone 14</td>
+                    <td>90000</td>
+                    <td>4</td>
+                    <td>360000</td>
+                    <td>Обработан</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>iPhone 15</td>
+                    <td>150000</td>
+                    <td>1</td>
+                    <td>150000</td>
+                    <td>Новый</td>
+                </tr>
+                </tbody>
+            </table>
         </main>
 
 
